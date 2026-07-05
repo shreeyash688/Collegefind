@@ -1,0 +1,703 @@
+/* =========================================
+   CollegeFind - style.css
+   One CSS file for the whole project.
+   Written by a first-year engineering student.
+   ========================================= */
+
+/* ----- CSS Variables (easy to change colors) ----- */
+:root {
+  --blue:       #1a56db;   /* primary accent */
+  --blue-dark:  #1240a8;
+  --blue-light: #e8f0fe;
+  --white:      #ffffff;
+  --bg:         #f4f7ff;   /* page background */
+  --text:       #1e293b;
+  --text-muted: #64748b;
+  --border:     #dce3f0;
+  --card-shadow: 0 2px 12px rgba(26,86,219,0.10);
+  --radius:     10px;
+}
+
+/* ----- Reset & Base ----- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul { list-style: none; }
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+
+/* =========================================
+   NAVBAR
+   ========================================= */
+.navbar {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.07);
+}
+
+.nav-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--blue);
+  letter-spacing: -0.3px;
+}
+
+/* Nav links */
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--blue);
+  border-bottom-color: var(--blue);
+}
+
+/* Hamburger (mobile) */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: var(--text);
+}
+
+
+/* =========================================
+   HERO SECTION (index.html)
+   ========================================= */
+.hero {
+  /* Gradient background — no image needed */
+  background: linear-gradient(135deg, #1240a8 0%, #1a56db 50%, #3b82f6 100%);
+  color: var(--white);
+  padding: 80px 20px 70px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+/* The colored span in the hero heading */
+.hero h1 span {
+  color: #93c5fd; /* light blue highlight */
+}
+
+.hero p {
+  font-size: 1.05rem;
+  opacity: 0.88;
+  margin-bottom: 30px;
+}
+
+/* Hero search box */
+.search-box {
+  display: flex;
+  gap: 10px;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 12px 16px;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 0.97rem;
+  outline: none;
+  color: var(--text);
+}
+
+.search-box button {
+  padding: 12px 22px;
+  background: #f59e0b; /* warm amber — stands out on blue */
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 0.97rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.search-box button:hover {
+  background: #d97706;
+}
+
+
+/* =========================================
+   GENERAL SECTION WRAPPER
+   ========================================= */
+.section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.section-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--text);
+  text-align: center;
+}
+
+.section-sub {
+  text-align: center;
+  color: var(--text-muted);
+  margin-top: 6px;
+  margin-bottom: 36px;
+}
+
+/* "View All" centered button */
+.center-btn {
+  text-align: center;
+  margin-top: 36px;
+}
+
+.btn-outline {
+  display: inline-block;
+  padding: 11px 28px;
+  border: 2px solid var(--blue);
+  color: var(--blue);
+  border-radius: var(--radius);
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-outline:hover {
+  background: var(--blue);
+  color: var(--white);
+}
+
+
+/* =========================================
+   COLLEGE CARDS GRID
+   ========================================= */
+.cards-grid {
+  display: grid;
+  /* Auto-fill: each card is at least 260px wide */
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 22px;
+}
+
+/* Individual card */
+.card {
+  background: var(--white);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(26,86,219,0.15);
+}
+
+/* College image inside card */
+.card-img {
+  height: 170px;
+}
+
+/* Card text area */
+.card-body {
+  padding: 16px;
+}
+
+.card-type {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--blue);
+  background: var(--blue-light);
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+}
+
+.card-name {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: var(--text);
+  /* Limit to 2 lines */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-location {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+}
+
+/* "View Details" button on card */
+.card-btn {
+  display: block;
+  text-align: center;
+  padding: 9px;
+  background: var(--blue);
+  color: var(--white);
+  border-radius: 7px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.card-btn:hover {
+  background: var(--blue-dark);
+}
+
+
+/* =========================================
+   STATS SECTION (index.html)
+   ========================================= */
+.stats-section {
+  background: linear-gradient(135deg, #1240a8, #1a56db);
+  padding: 50px 20px;
+}
+
+.stats-grid {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.stat-num {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--white);
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.75);
+  font-weight: 500;
+}
+
+
+/* =========================================
+   PAGE HEADER (colleges.html, about.html)
+   ========================================= */
+.page-header {
+  background: linear-gradient(135deg, #1240a8, #3b82f6);
+  color: var(--white);
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.page-header p {
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+
+/* =========================================
+   FILTERS BAR (colleges.html)
+   ========================================= */
+.filters-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.filter-input,
+.filter-select {
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 0.92rem;
+  background: var(--white);
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+/* Make search input wider than selects */
+.filter-input {
+  flex: 1;
+  min-width: 200px;
+}
+
+.filter-input:focus,
+.filter-select:focus {
+  border-color: var(--blue);
+}
+
+/* Reset button */
+.btn-reset {
+  padding: 10px 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--white);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-reset:hover {
+  background: #fee2e2;
+  color: #dc2626;
+  border-color: #fca5a5;
+}
+
+/* Small text showing result count */
+.result-count {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-bottom: 18px;
+}
+
+/* No results message */
+.no-results {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}
+
+
+/* =========================================
+   COLLEGE DETAILS PAGE (details.html)
+   ========================================= */
+
+/* Banner image at top of details page */
+.detail-banner {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.detail-container {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 36px 20px 60px;
+}
+
+/* Back button */
+.back-btn {
+  display: inline-block;
+  margin-bottom: 22px;
+  color: var(--blue);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.back-btn:hover {
+  text-decoration: underline;
+}
+
+/* College name on details page */
+.detail-name {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+/* Type badge on details page */
+.detail-type {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--blue);
+  background: var(--blue-light);
+  padding: 3px 12px;
+  border-radius: 20px;
+  margin-bottom: 24px;
+}
+
+/* Info grid: address, contact, website */
+.detail-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.info-item {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+}
+
+.info-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.info-value {
+  font-size: 0.95rem;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.info-value a {
+  color: var(--blue);
+}
+
+.info-value a:hover {
+  text-decoration: underline;
+}
+
+/* Description block */
+.detail-desc {
+  margin-bottom: 28px;
+  line-height: 1.75;
+  color: var(--text);
+  font-size: 0.97rem;
+}
+
+.detail-section-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: var(--text);
+}
+
+/* Courses list */
+.courses-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.course-tag {
+  background: var(--blue-light);
+  color: var(--blue-dark);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+
+/* =========================================
+   ABOUT PAGE
+   ========================================= */
+.about-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.about-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  box-shadow: var(--card-shadow);
+}
+
+.about-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.about-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--text);
+}
+
+.about-card p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+/* Feature bullet list */
+.feature-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.93rem;
+  color: var(--text-muted);
+}
+
+/* Tech tags */
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.tag {
+  background: var(--blue-light);
+  color: var(--blue-dark);
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* Developer note card — slightly different bg */
+.dev-note {
+  background: #fffbeb;
+  border-color: #fde68a;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+.footer {
+  background: #1e293b;
+  color: rgba(255,255,255,0.75);
+  padding: 28px 20px;
+  text-align: center;
+}
+
+
+/* =========================================
+   RESPONSIVE — MOBILE (max 640px)
+   ========================================= */
+@media (max-width: 640px) {
+
+  /* Show hamburger, hide links by default */
+  .hamburger { display: block; }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    padding: 16px 20px;
+    border-top: 1px solid var(--border);
+    gap: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  }
+
+  /* When hamburger is clicked, JS adds .open class */
+  .nav-links.open { display: flex; }
+
+  .hero h1 { font-size: 1.65rem; }
+
+  .search-box { flex-direction: column; }
+
+  .search-box input,
+  .search-box button { width: 100%; }
+
+  .section { padding: 40px 16px; }
+
+  .section-title { font-size: 1.35rem; }
+
+  .detail-name { font-size: 1.35rem; }
+
+  .about-card { flex-direction: column; gap: 10px; }
+}
+.details-card {
+    max-width: 800px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.details-card h1 {
+    margin-bottom: 20px;
+}
+
+.details-card p {
+    margin: 15px 0;
+    line-height: 1.8;
+}
+
+.loading {
+    text-align: center;
+    padding: 60px;
+    color: #666;
+}

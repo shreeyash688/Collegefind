@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CollegeFind – Find Your Future</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">🎓 CollegeFind</a>
+      <!-- Hamburger for mobile -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="colleges.html">Colleges</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Find the Right College<br/><span>for Your Future</span></h1>
+      <p>Explore hundreds of colleges across India. Filter by state, course, and type — all in one place.</p>
+
+      <!-- Search bar -->
+      <div class="search-box">
+        <input type="text" id="heroSearch" placeholder="Search by college name or city..." />
+        <button onclick="doHeroSearch()">Search</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED COLLEGES ===== -->
+  <section class="section">
+    <h2 class="section-title">Featured Colleges</h2>
+    <p class="section-sub">Hand-picked institutions with excellent academic records</p>
+    <!-- Cards are injected by script.js -->
+    <div class="cards-grid" id="featuredCards"></div>
+    <div class="center-btn">
+      <a href="colleges.html" class="btn-outline">View All Colleges →</a>
+    </div>
+  </section>
+
+  <!-- ===== STATS SECTION ===== -->
+  <section class="stats-section">
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-num">120+</span>
+        <span class="stat-label">Colleges Listed</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">28</span>
+        <span class="stat-label">States Covered</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">50+</span>
+        <span class="stat-label">Courses Available</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">10k+</span>
+        <span class="stat-label">Students Helped</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>🎓 <strong>CollegeFind</strong> — An internship project by a first-year engineering student.</p>
+      <p style="margin-top:6px; font-size:0.85rem; opacity:0.7;">© 2024 CollegeFind. Built with HTML, CSS & Vanilla JS.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
