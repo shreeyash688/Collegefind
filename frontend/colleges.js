@@ -213,6 +213,129 @@ function getCollegeImage(name) {
 
     if (name.includes("Savitribai Phule Pune"))
         return "https://imgs.search.brave.com/bMyPN4NpvI8z2VkeBQEFUeDJpN4p7rWFDeQGI8O9RQk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9zYXZp/dHJpYmFpLXBodWxl/LXB1bmUtdW5pdmVy/c2l0eS1mb3VuZGVk/LXBvb25hLW1haGFy/YXNodHJhLWluZGlh/LWFzaWEtMzM3NjI2/Mzk4LmpwZw";
+    // IITs
+if (name.includes("IIT Roorkee"))
+    return "images/IIT Roorkee.jpg";
+
+if (name.includes("IIT Guwahati"))
+    return "https://imgs.search.brave.com/ANXYiCvK9FeF0ZDDg7mqyNMH7S9zr7XrMU09yHMzOkY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS1zdGF0aWMuY29s/bGVnZWR1bmlhLmNv/bS9wdWJsaWMvY29s/bGVnZV9kYXRhL2lt/YWdlcy9jYW1wdXNp/bWFnZS8xNjQzMjg2/MzM3ODUzNjE2MDI3/LmpwZw";
+
+if (name.includes("IIT Hyderabad"))
+    return "https://imgs.search.brave.com/QgvoMpr9Eqas-gC5TYwzmToAXPGTxOEaCYIiyGzydrI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5jb2xsZWdlZGVr/aG8uY29tL21lZGlh/L2ltZy9pbnN0aXR1/dGUvY3Jhd2xlZF9p/bWFnZXMvMDlJSVQt/SFlERVJBQkFEMi5q/cGc_d2lkdGg9MTA4/MA";
+
+if (name.includes("IIT Indore"))
+    return "https://imgs.search.brave.com/xSGgz5WFpPX5qVS0d-9hsGKYb0MBB_CXJbTQLKqNn4Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Ym9kbWFzZWR1Y2F0/aW9uLmNvbS9zdG9y/YWdlL3VwbG9hZHMv/MTc2NjgxNjIyMF9J/bmRpYW4lMjBJbnN0/aXR1dGUlMjBvZiUy/MFRlY2hub2xvZ3ks/JTIwSW5kb3JlLmpw/Zw";
+
+if (name.includes("IIT Bhubaneswar"))
+    return "https://imgs.search.brave.com/YjZvUVjTN-AzZiCrnAOTtnlYCYz380nm5IxsbYpEZuE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS1zdGF0aWMuY29s/bGVnZWR1bmlhLmNv/bS9wdWJsaWMvY29s/bGVnZV9kYXRhL2lt/YWdlcy9jYW1wdXNp/bWFnZS8xNzY0Njcz/NDc3Q2FtcHVzJTIw/KDkpLndlYnA";
+
+if (name.includes("IIT Gandhinagar"))
+    return "https://imgs.search.brave.com/vYJiuaGHZM3Pj3MGx39BILdaBm4x3hEAAcSCQnh9qxk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Y29sbGVnZWJhdGNo/LmNvbS9zdGF0aWMv/Y2xnLWdhbGxlcnkv/aW5kaWFuLWluc3Rp/dHV0ZS1vZi10ZWNo/bm9sb2d5LWdhbmRo/aW5hZ2FyLTIzODc1/Ny53ZWJw";
+
+if (name.includes("IIT Patna"))
+    return "https://imgs.search.brave.com/fr-wN7w4GxOZjLJUE1A2IIurZia-sJeG2fbcCPvz01U/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS1zdGF0aWMuY29s/bGVnZWR1bmlhLmNv/bS9wdWJsaWMvY29s/bGVnZV9kYXRhL2lt/YWdlcy9jYW1wdXNp/bWFnZS8xNzY3MDkw/MDQ4Q2FtcHVzJTIw/NC5qcGVn";
+
+if (name.includes("IIT Mandi"))
+    return "https://imgs.search.brave.com/WK_bEMczdogZUieC6df0zPjlJl9MHesRaIgalLj23Qo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS1zdGF0aWMuY29s/bGVnZWR1bmlhLmNv/bS9wdWJsaWMvY29s/bGVnZV9kYXRhL2lt/YWdlcy9jYW1wdXNp/bWFnZS8xNDQxMTAx/NzI5dGMyLmpwZw";
+
+if (name.includes("IIT Jodhpur"))
+    return "https://imgs.search.brave.com/NS2xe61SJMSWiNmB_JaVxiHej25FqbPxUIeuGm23VBk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c2lrc2hhcGVkaWEu/Y29tL3B1YmxpYy9k/YXRhL2NvbGxlZ2Vz/L2lpdC1qb2RocHVy/LWpvZGhwdXItcmFq/YXN0aGFuLzh2WFcw/SUd6Wmoud2VicA";
+
+if (name.includes("IIT Ropar"))
+    return "https://imgs.search.brave.com/HJ9hTlAiRRxpoiCOmZyZ-K-qiBYZYaEsoUN4XUc70lw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy80/LzQ2L0lJVF9Sb3Bh/cl8tX01haW5fQnVp/bGRpbmdfb2ZfdGhl/X1RyYW5zaXRfQ2Ft/cHVzLkpQRw";
+
+
+// NITs
+if (name.includes("NIT Rourkela"))
+    return "https://imgs.search.brave.com/XdIow7Fouj1HMBopb6oPJtmo2HIfSNx7_b8kG0Vye1Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS1zdGF0aWMuY29s/bGVnZWR1bmlhLmNv/bS9wdWJsaWMvY29s/bGVnZV9kYXRhL2lt/YWdlcy9jYW1wdXNp/bWFnZS8xNDgyMzky/ODAxY2VyYW1pY19k/ZXBhcnRtZW50Lmpw/Zw";
+
+if (name.includes("NIT Durgapur"))
+    return "https://imgs.search.brave.com/RymnegfArMY7v1jL28Bw8U4YIsIPxAStCi6RLJODRiM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS1zdGF0aWMuY29s/bGVnZWR1bmlhLmNv/bS9wdWJsaWMvY29s/bGVnZV9kYXRhL2lt/YWdlcy9jYW1wdXNp/bWFnZS8xNzY1NDUx/OTU4Q2FtcHVzJTIw/KDE0KS5qcGc";
+
+if (name.includes("NIT Silchar"))
+    return "https://imgs.search.brave.com/9j3V9C8gQF1VxZMHn42pePkuc2rgAfScac72Hifbzgw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS1zdGF0aWMuY29s/bGVnZWR1bmlhLmNv/bS9wdWJsaWMvY29s/bGVnZV9kYXRhL2lt/YWdlcy9jYW1wdXNp/bWFnZS8yNTM5OV9l/bnRyeSUyMGdhdGUu/d2VicA";
+
+if (name.includes("NIT Hamirpur"))
+    return "https://imgs.search.brave.com/w5MbLwYZfwjXxk-ZtLr7Crzhr-t65s_Wmk9-jw180pE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS1zdGF0aWMuY29s/bGVnZWR1bmlhLmNv/bS9wdWJsaWMvY29s/bGVnZV9kYXRhL2lt/YWdlcy9jYW1wdXNp/bWFnZS8xNDMyMDI3/MzU3bmlpdCUyMDEu/anBn";
+
+if (name.includes("NIT Kurukshetra"))
+    return "https://imgs.search.brave.com/HcbFjI-7TaWtm40JscdsPUwjUcz6jhNvWdFFReAm_Ys/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS1zdGF0aWMuY29s/bGVnZWR1bmlhLmNv/bS9wdWJsaWMvcmV2/aWV3UGhvdG9zLzEx/MzU1MjYvMTAwMDAw/MDQxOC5qcGc";
+
+if (name.includes("NIT Jalandhar"))
+    return "https://imgs.search.brave.com/b44NGPJLXB5WFs3_RTFV24aPRkY6aNUrAtqVUB4r4g4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS1zdGF0aWMuY29s/bGVnZWR1bmlhLmNv/bS9wdWJsaWMvY29s/bGVnZV9kYXRhL2lt/YWdlcy9jYW1wdXNp/bWFnZS8yNTc4MV9C/dWlsZGluZzIud2Vi/cA";
+
+if (name.includes("NIT Raipur"))
+    return "https://imgs.search.brave.com/FiKpZWwGOwUuj0Zo3oi2YrCTq7ZqZr4b8RgOoTxxPyM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS1zdGF0aWMuY29s/bGVnZWR1bmlhLmNv/bS9wdWJsaWMvY29s/bGVnZV9kYXRhL2lt/YWdlcy9jYW1wdXNp/bWFnZS8yNTQ0Ml9j/YW1wdXMud2VicA";
+
+
+// IIITs
+if (name.includes("IIIT Allahabad"))
+    return "https://imgs.search.brave.com/X6d_OJPNDct9XrcodtfOj85Qim0fR3CH1jlT1f8jV2o/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMuYm9vc3RteXRh/bGVudC5jb20vaW1n/L3VuaXYvaWlpdC1h/bGxhaGFiYWQtY2Ft/cHVzLWFkbWlzc2lv/bi53ZWJw";
+
+if (name.includes("IIIT Gwalior"))
+    return "https://imgs.search.brave.com/vVP2sijXxwFwrfxg-EGgKkhR1wLrpn0c05fh7nrQP3Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS1zdGF0aWMuY29s/bGVnZWR1bmlhLmNv/bS9wdWJsaWMvY29s/bGVnZV9kYXRhL2lt/YWdlcy9jYW1wdXNp/bWFnZS8xNTAzODk3/NDE0MTQ4OTY0NDAw/NzE0MzUzODYwMDgx/NDA2MzcwNDI1NTUy/ODk0XzEwMTUxNzU2/OTk4NzMwMzMyXzE0/MjkxNjU2NTBfbi5q/cGc";
+
+if (name.includes("IIIT Pune"))
+    return "https://imgs.search.brave.com/U5LnIlF5foNgyJCbCEwADs8qNslbvKv_GDy5UTo2agg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS1zdGF0aWMuY29s/bGVnZWR1bmlhLmNv/bS9wdWJsaWMvcmV2/aWV3UGhvdG9zLzEx/MzYzNzAvMTAwMDAx/MDY4Ny5qcGc";
+
+if (name.includes("IIIT Lucknow"))
+    return "https://imgs.search.brave.com/87A-EGezq1yZTxNVi5ML7BM3AJUO04CQkKHl3Yd7zyE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS1zdGF0aWMuY29s/bGVnZWR1bmlhLmNv/bS9wdWJsaWMvY29s/bGVnZV9kYXRhL2lt/YWdlcy9jYW1wdXNp/bWFnZS81NTc5Ml9l/bnRyeSUyMGdhdGUu/d2VicA";
+
+if (name.includes("IIIT Nagpur"))
+    return "https://imgs.search.brave.com/ccpJQndV8MfNq66wAjE_FUlMVVvoW55K_h0XeLiuC7M/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS1zdGF0aWMuY29s/bGVnZWR1bmlhLmNv/bS9wdWJsaWMvcmV2/aWV3UGhvdG9zLzEx/NTc5MTUvY2VtcHVz/LmpwZWc";
+
+
+// Private Universities
+if (name.includes("Bennett University"))
+    return "https://imgs.search.brave.com/k277VwxetHn13qmeBUHvzdT5UNiq9_AB8ts8BtsINh0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS1zdGF0aWMuY29s/bGVnZWR1bmlhLmNv/bS9wdWJsaWMvY29s/bGVnZV9kYXRhL2lt/YWdlcy9jYW1wdXNp/bWFnZS8xNjE0MzQx/NjYwMTQwNDU2OThf/MTI0NTMxMzQ3NTQ4/MTc2MV8xMjE4NTQ5/ODg2NDIzNzQzMjlf/bi5qcGc";
+
+if (name.includes("Galgotias University"))
+    return "https://imgs.search.brave.com/4FqT8_oyGDOgNnbw_tM82peWEg0BPIPvxsW97tdHpkc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS1zdGF0aWMuY29s/bGVnZWR1bmlhLmNv/bS9wdWJsaWMvY29s/bGVnZV9kYXRhL2lt/YWdlcy9jYW1wdXNp/bWFnZS8xNzY2NDIy/OTcwY2FtcHVzJTIw/KDgpLmpwZw";
+
+if (name.includes("Sharda University"))
+    return "https://imgs.search.brave.com/zeZp4Qvmu9bIGi461nHwOg7qGJEKRDf_GqdyLA7ODhI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/dW5pdmVyc2l0eWth/cnQuY29tLy9Db250/ZW50L3VwbG9hZC9h/ZG1pbi80bHB6eDFm/eS5qbGYuanBn";
+
+if (name.includes("NMIMS Mumbai"))
+    return "https://imgs.search.brave.com/VZSsHlzlnO3Sr8sdKWFiyRUMSRQONRuWN8CIxkFZp3Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ubWF0/Lm5taW1zLmVkdS9p/bWFnZXMvbm1pbXMt/bmF2aS1tdW1iYWkt/Y2FtcHVzLmpwZw";
+
+if (name.includes("Symbiosis International University"))
+    return "https://imgs.search.brave.com/4gSMSA0mQO3RR7w7FPJh63A2YxAifrVG7fwfiZcVkow/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jb250/ZW50LmpkbWFnaWNi/b3guY29tL2NvbXAv/cHVuZS8wOS8wMjBw/NTA4MTQwOS9jYXRh/bG9ndWUvc3ltYmlv/c2lzLWludGVybmF0/aW9uYWwtdW5pdmVy/c2l0eS1sYXZhbGUt/cHVuZS1jb2xsZWdl/cy04c2k3emtoeDJ2/LmpwZz93PTM4NDAm/cT03NQ";
+
+if (name.includes("Graphic Era University"))
+    return "https://imgs.search.brave.com/PCxR2diPpz7c08I07f49kKCGk8xPxHHnGosMdvLCsnw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YWRtaXNzaW9ubGVs/by5pbi91cGxvYWQv/MTU1MzM0MTkxN0NB/TVBVUyUyMDMuanBn";
+
+if (name.includes("Jain University"))
+    return "https://imgs.search.brave.com/ySPe4E49q1BbGHMXRX3gkb1UwkuospdJeT_kdR9-oyA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/aWVzb25saW5lLmNv/LmluL2NvbGxlZ2Vz/LWltYWdlL2phaW4t/dW5pdmVyc2l0eS5q/cGc";
+
+if (name.includes("REVA University"))
+    return "https://imgs.search.brave.com/qP2kI6Iyxqw_wMhAzIOj6GOIrm6bcznuhrEd3iJHtOk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c2lrc2hhcGVkaWEu/Y29tL3B1YmxpYy9k/YXRhL2NvbGxlZ2Vz/L3JldmEtdW5pdmVy/c2l0eS1iYW5nYWxv/cmUta2FybmF0YWth/L3JldmEtdW5pdmVy/c2l0eS1iYW5nYWxv/cmUta2FybmF0YWth/LWJhbm5lci53ZWJw";
+
+if (name.includes("Presidency University"))
+    return "https://imgs.search.brave.com/mzD59bPI5R5RJspm7iUWCYRwy5yT4JR1K5Se_De9ljk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS1zdGF0aWMuY29s/bGVnZWR1bmlhLmNv/bS9wdWJsaWMvcmV2/aWV3UGhvdG9zLzEw/Njk4NDYvaW5ib3Vu/ZDc5NTYwMjUyNjc3/NTc1NDYxNzUuanBn";
+
+if (name.includes("Alliance University"))
+    return "https://imgs.search.brave.com/0YXzDacLlzxX0Dfwav3R5KdGLNstOTA6ZA5glqJzdB8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS1zdGF0aWMuY29s/bGVnZWR1bmlhLmNv/bS9wdWJsaWMvY29s/bGVnZV9kYXRhL2lt/YWdlcy9jYW1wdXNp/bWFnZS8xNjQ2Mzg4/MjExdW5uYW1lZCUy/MCgxMikuanBn";
+
+if (name.includes("Parul University"))
+    return "https://imgs.search.brave.com/9HGIyhCRyU76kI9FaZsoMX39Vw-heOXTho90EnJdHV4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jYWNo/ZS5jYXJlZXJzMzYw/Lm1vYmkvbWVkaWEv/YXJ0aWNsZV9pbWFn/ZXMvMjAyNS84LzIx/L1BhcnVsLXVuaXZl/cnNpdHR5LTAzJTIw/KDIpJTIwKDEpLmpw/Zw";
+
+if (name.includes("KL University"))
+    return "https://imgs.search.brave.com/TjOrWfBCi9dH5Hch3bFQT9RpljfTs1IZU7iJWVcnKu8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS1zdGF0aWMuY29s/bGVnZWR1bmlhLmNv/bS9wdWJsaWMvY29s/bGVnZV9kYXRhL2lt/YWdlcy9jYW1wdXNp/bWFnZS8xNTc5MDY5/OTkwRmVkX0NTX01l/Y2guanBn";
+
+if (name.includes("SASTRA University"))
+    return "https://imgs.search.brave.com/_LE4Y0k0IMRE1KBGLObbX3Rd7tFbahoqhP5S579WFkM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jYW1w/dXNwcm8uY28uaW4v/Y29sbGFnZS1pbWFn/ZS8xNzQ5MjkyMzk0/X3Jvd181Ni5qcGc";
+
+
+// Government Colleges
+
+if (name.includes("BIT Sindri"))
+    return "https://imgs.search.brave.com/jgc82XR26qYJzKnr4p8TpCM03-vOlM0j1PkmgHEIgzI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS1zdGF0aWMuY29s/bGVnZWR1bmlhLmNv/bS9wdWJsaWMvY29s/bGVnZV9kYXRhL2lt/YWdlcy9jYW1wdXNp/bWFnZS8xNzY2Mzky/MDk3Q2FtcHVzJTIw/My5qcGc";
+
+if (name.includes("Harcourt Butler Technical University"))
+    return "https://imgs.search.brave.com/CsWMntBp2N8YwW4AGMTdEs5vjTI7ElkrSc00z3UA8iQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Y29sbGVnZWJhdGNo/LmNvbS9zdGF0aWMv/Y2xnLWdhbGxlcnkv/aGFyY291cnQtYnV0/bGVyLXRlY2huaWNh/bC11bml2ZXJzaXR5/LWthbnB1ci0zNjQw/NTIud2VicA";
+
+if (name.includes("Government College of Engineering Aurangabad"))
+    return "https://imgs.search.brave.com/TtXKRdozgbplUBy5ScdQYSdKDaHW23tzB-BLRL4ZzBQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5jb2xsZWdlZGVr/aG8uY29tL21lZGlh/L2ltZy9pbnN0aXR1/dGUvY3Jhd2xlZF9p/bWFnZXMvR292ZXJu/bWVudF9Db2xsZWdl/X29mX0VuZ2luZWVy/aW5nYXVyYTQ4MC5q/cGc_d2lkdGg9NjQw";
 
     // Default image
    return "images/default.jpg";
