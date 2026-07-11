@@ -347,8 +347,7 @@ if (name === "IIT Bhilai")
     return "https://imgs.search.brave.com/mFzdR8ZSFtYYBLTQ6wIKHVLtq-6LRYeNFK5G_jwuEBc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS1zdGF0aWMuY29s/bGVnZWR1bmlhLmNv/bS9wdWJsaWMvcmV2/aWV3UGhvdG9zLzQ2/ODY1Ni9JTUdfMjAy/MzA5MTVfMTUxODA4/LmpwZw";
 
 if (name === "IIT Goa")
-    return "/https://imgs.search.brave.com/w4JZlLt358hPXEYb6WHYv1X7hC0CfMYxM2JfBvYF9wo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kYXRh/LnRlc3RwcmVwa2Fy/dC5jb20vdW5pdmVy/c2l0eS9JbmRpYW5f/SW5zdGl0dXRlX29m/X1RlY2hub2xvZ3lf/KEdvYSk2MTY0MDU0/YmFhOTQySUlUR29h/VGVzdFByZXBLYXJ0/XzEuanBn";
-
+    return "https://imgs.search.brave.com/qlDgSdk5J67QMElepy5m2zuPsVnnLQFI8oepUVOoPVw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS1zdGF0aWMuY29s/bGVnZWR1bmlhLmNv/bS9wdWJsaWMvY29s/bGVnZV9kYXRhL2lt/YWdlcy9jYW1wdXNp/bWFnZS8xNTYzNDQ5/MzY4QzIuanBn";
 if (name === "IIT Jammu")
     return "https://imgs.search.brave.com/haDPhzVW6CYbyQG-2LiHhqwMOieYlf8BYOh1K6il7J0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMuYm9vc3RteXRh/bGVudC5jb20vaW1n/L3VuaXYvaWl0LWph/bW11LWNhbXB1cy1h/ZG1pc3Npb24ud2Vi/cA";
 
@@ -367,6 +366,8 @@ if (name === "IIIT Una")
 if (name === "IIIT Kalyani")
     return "https://imgs.search.brave.com/qKKC6d4PixT7Svd0ZtR7uhzTAVbBgwI7PCHspMbvOoA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS1zdGF0aWMuY29s/bGVnZWR1bmlhLmNv/bS9wdWJsaWMvY29s/bGVnZV9kYXRhL2lt/YWdlcy9jYW1wdXNp/bWFnZS81NTc4Ml9F/bnRyeV9nYXRlLndl/YnA";
 
+if (name === "Punjab Engineering College")
+    return "https://imgs.search.brave.com/V3WkHVu8nFS2hMSUc4AtMIpCT1H5dcrlldXsiNhggis/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jYW1w/dXNwcm8uY28uaW4v/Y29sbGFnZS1pbWFn/ZS8xNzUxOTc4Mzkz/X3Jvd181Ni5qcGc";
     // Default image
    return "images/default.jpg";
 }
