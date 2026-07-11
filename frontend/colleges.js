@@ -336,6 +336,36 @@ if (name.includes("Harcourt Butler Technical University"))
 
 if (name.includes("Government College of Engineering Aurangabad"))
     return "https://imgs.search.brave.com/TtXKRdozgbplUBy5ScdQYSdKDaHW23tzB-BLRL4ZzBQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5jb2xsZWdlZGVr/aG8uY29tL21lZGlh/L2ltZy9pbnN0aXR1/dGUvY3Jhd2xlZF9p/bWFnZXMvR292ZXJu/bWVudF9Db2xsZWdl/X29mX0VuZ2luZWVy/aW5nYXVyYTQ4MC5q/cGc_d2lkdGg9NjQw";
+// New IITs
+if (name === "IIT Tirupati")
+    return "https://imgs.search.brave.com/J8OfKGjtGA1nyK4sDy96NC_k0Pom0PnACTBddCiplKc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS1zdGF0aWMuY29s/bGVnZWR1bmlhLmNv/bS9wdWJsaWMvY29s/bGVnZV9kYXRhL2lt/YWdlcy9jYW1wdXNp/bWFnZS81NTkzNV9J/bnN0aXR1dGUlMjBi/dWlsZGluZyUyMGZy/b250JTIwdmlldy53/ZWJw";
+
+if (name === "IIT Dharwad")
+    return "https://imgs.search.brave.com/YSh1lq-IuH9OQF9xHBk8EgZTzZZGMQb_5A8GHclpJ9U/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS1zdGF0aWMuY29s/bGVnZWR1bmlhLmNv/bS9wdWJsaWMvaW1h/Z2UvSUlJVERfY2Iy/NDg1MmZmODkyYmU5/YzI1NDVmZjMwNzdi/YTFkMzYucG5n";
+
+if (name === "IIT Bhilai")
+    return "https://imgs.search.brave.com/mFzdR8ZSFtYYBLTQ6wIKHVLtq-6LRYeNFK5G_jwuEBc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS1zdGF0aWMuY29s/bGVnZWR1bmlhLmNv/bS9wdWJsaWMvcmV2/aWV3UGhvdG9zLzQ2/ODY1Ni9JTUdfMjAy/MzA5MTVfMTUxODA4/LmpwZw";
+
+if (name === "IIT Goa")
+    return "/https://imgs.search.brave.com/w4JZlLt358hPXEYb6WHYv1X7hC0CfMYxM2JfBvYF9wo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kYXRh/LnRlc3RwcmVwa2Fy/dC5jb20vdW5pdmVy/c2l0eS9JbmRpYW5f/SW5zdGl0dXRlX29m/X1RlY2hub2xvZ3lf/KEdvYSk2MTY0MDU0/YmFhOTQySUlUR29h/VGVzdFByZXBLYXJ0/XzEuanBn";
+
+if (name === "IIT Jammu")
+    return "https://imgs.search.brave.com/haDPhzVW6CYbyQG-2LiHhqwMOieYlf8BYOh1K6il7J0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMuYm9vc3RteXRh/bGVudC5jb20vaW1n/L3VuaXYvaWl0LWph/bW11LWNhbXB1cy1h/ZG1pc3Npb24ud2Vi/cA";
+
+if (name === "IIT Palakkad")
+    return "https://imgs.search.brave.com/vIZpQ-7Ru7GJ8eGq4eIWE-ygXzVUOoy7MesNp0a4jlY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMuY29sbGVnZWR1/bmlhLmNvbS9wdWJs/aWMvaW1hZ2UvU2Ny/ZWVuc2hvdF8yMDI1/XzA2XzI1XzE0MTg1/Ml85NThiNGU2YjU2/M2Q3MDEwOGMzN2Jh/NWJmYWFlOWI4OC5w/bmc";
+
+if (name === "IIIT Kottayam")
+    return "https://imgs.search.brave.com/FAXo9EpiqdbpTG49nOxb17EKw4MJmUMaRDIHpmVRg9Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS1zdGF0aWMuY29s/bGVnZWR1bmlhLmNv/bS9wdWJsaWMvaW1h/Z2UvSUlJVF9Lb3R0/YXlhbV9jNjdkMjgx/MmJiNGRkZDVhMzRh/NTBjMWU0M2RkM2Uz/YS5wbmc";
+
+if (name === "IIIT Sri City")
+    return "https://imgs.search.brave.com/8dllI6W0vvfhIW-xg7wo71JEi5TWqjuLUPnLT3WTofI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS1zdGF0aWMuY29s/bGVnZWR1bmlhLmNv/bS9wdWJsaWMvY29s/bGVnZV9kYXRhL2lt/YWdlcy9jYW1wdXNp/bWFnZS81NTc4OV9D/b3B5JTIwb2YlMjBj/YW1wdXMlMjBhcmVh/JTIwKDkpLndlYnA";
+
+if (name === "IIIT Una")
+    return "https://imgs.search.brave.com/nl30IT12hssDW0XfQbAc_mdL3yqEQzQV0TMmAOEpuzA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS1zdGF0aWMuY29s/bGVnZWR1bmlhLmNv/bS9wdWJsaWMvY29s/bGVnZV9kYXRhL2lt/YWdlcy9jYW1wdXNp/bWFnZS81NTc5MF9h/Y2FkZW1pYyUyMGJs/b2NrLndlYnA";
+
+if (name === "IIIT Kalyani")
+    return "https://imgs.search.brave.com/qKKC6d4PixT7Svd0ZtR7uhzTAVbBgwI7PCHspMbvOoA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS1zdGF0aWMuY29s/bGVnZWR1bmlhLmNv/bS9wdWJsaWMvY29s/bGVnZV9kYXRhL2lt/YWdlcy9jYW1wdXNp/bWFnZS81NTc4Ml9F/bnRyeV9nYXRlLndl/YnA";
 
     // Default image
    return "images/default.jpg";
